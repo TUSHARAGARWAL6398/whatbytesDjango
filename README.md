@@ -24,33 +24,18 @@ This is a Django project for [brief description of the project]. Follow the inst
     source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
     ```
 
-3. **Install Required Packages**
+3.**move to myproject folder**
+    ```bash
+    cd myproject
+    ```
+
+4. **Install Required Packages**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. **Set Up Environment Variables**
 
-    Create a `.env` file in the root directory of your project (where `manage.py` is located). This file will store your environment variables.
-
-    Example `.env` file:
-
-    ```env
-    EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
-    EMAIL_HOST=smtp.gmail.com
-    EMAIL_PORT=587
-    EMAIL_USE_TLS=True
-    EMAIL_HOST_USER=your-email@gmail.com
-    EMAIL_HOST_PASSWORD=your-email-password
-    DEFAULT_FROM_EMAIL=your-email@gmail.com
-    ```
-
-    Ensure that `python-dotenv` is installed to load the `.env` file:
-
-    ```bash
-    pip install python-dotenv
-    ```
 
 5. **Apply Migrations**
 
