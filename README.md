@@ -13,8 +13,8 @@ This is a Django project for [brief description of the project]. Follow the inst
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/TUSHARAGARWAL6398/whatbytesDjango.git
+    cd whatbytesDjango
     ```
 
 2. **Create and Activate a Virtual Environment**
