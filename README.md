@@ -1,4 +1,4 @@
-My Django Project
+y Django Project
 Overview
 This is a Django project for [brief description of your project]. It includes features such as [list key features], and it's designed to [purpose of the project].
 
@@ -30,10 +30,20 @@ If your project directory is separate (e.g., named myproject), navigate into it:
 
 bash
 Copy code
-4.cd myproject
+cd myproject
+4. Set Up Environment Variables
+Create a .env file in the root of your project directory (where manage.py is located). Add your environment-specific variables to this file:
 
-
-
+env
+Copy code
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=your-email@gmail.com
+EMAIL_HOST_PASSWORD=your-email-password
+DEFAULT_FROM_EMAIL=your-email@gmail.com
+Note: Replace placeholders with your actual email details.
 
 5. Install Dependencies
 bash
@@ -61,10 +71,3 @@ bash
 Copy code
 python manage.py runserver
 You can access the project at http://127.0.0.1:8000/.
-
-Project Structure
-myapp/: Main application folder containing views, models, and templates.
-myproject/: Project folder containing settings, URLs, and WSGI configuration.
-static/: Directory for static files like CSS, JavaScript, and images.
-templates/: Directory for HTML templates.
-.venv/: Virtual environment directory (not included in version control).
