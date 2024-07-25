@@ -33,7 +33,7 @@ This is a Django project for [brief description of the project]. Follow the inst
 
     ```bash
     pip install -r requirements.txt
-    ```
+    
 
 
 
@@ -59,21 +59,6 @@ This is a Django project for [brief description of the project]. Follow the inst
 
     You can now access your project at `http://127.0.0.1:8000/`.
 
-## Notes
 
-- **Environment Variables**: Make sure the `.env` file is included in your `.gitignore` to prevent sensitive information from being committed to version control.
-- **Static Files**: Ensure that your static files are correctly set up and available. If you make changes to your static files, run:
 
-    ```bash
-    python manage.py collectstatic
-    ```
 
-## Troubleshooting
-
-- **If you encounter issues with environment variables**, verify that the `.env` file is correctly named and placed in the root directory. Ensure that `python-dotenv` is installed and properly loaded in your `settings.py`.
-
-- **For 404 or CSS issues**, make sure that the static files directory is correctly configured in your `settings.py` and that you have included `{% load static %}` in your templates.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
