@@ -26,9 +26,9 @@ This is a Django project for [brief description of the project]. Follow the inst
 
 3.**move to myproject folder**
     ```bash
+
     cd myproject
     ```
-
 4. **Install Required Packages**
 
     ```bash
